@@ -65,11 +65,11 @@ class myplugin_sysnr(idaapi.plugin_t):
                     elif e_machine == 20:
                         LinuxFuncFinder_PPC32.main()
                     else:
-                        print("请确认插件版本是否支持当前文件架构。")
+                        print("Please confirm whether the plugin version supports the current file structure.")
             else:
-                 print("当前插件仅支持EXEC可执行ELF文件。")
+                 print("Currently the plugin only supports EXEC executable ELF files.")
         else:
-            print("当前插件仅支持ELF文件格式。")
+            print("Currently the plugin only supports the ELF file format.")
     def about(self):
         f = About_Form()
         f.Execute()
